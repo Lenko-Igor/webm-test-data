@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  main {
+    background-color: #80808057;
+  }
+  p {
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+header {
+  background-color: #80808057;
+  h1 {
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav {
+    padding: 15px 0;
+    background-color: white;
+  }
+}
+.cards__wrapper {
+  padding: 25px 0;
+  .card {
+    min-width: 800px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.21);
+    .col-md-4 {
+      width: 350px;
+      display: flex;
+      align-items: center;
+      padding-left: 8px;
+    }
+    .col-md-8 {
+      width: 445px;
+      .card-main__title {
+        text-align: end;
+      }
+      .card-text {
+        text-align: end;
+      }
+      .card-price {
+        color: red;
+        text-align: end;
+      }
+      .card-text span {
+        font-weight: bold;
+      }
+      .card-footer__items {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.content__wrapper {
+  padding: 25px 0;
+  p {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  .footer-logo {
+    min-width: 70px;
+    height: 70px;
+    border: 2px solid grey;
+    background-color: #80808057;
+    margin-right: 50px;
+  }
+  .footer-content {
+    text-align: justify;
+    min-width: 400px;
+  }
+}
+
