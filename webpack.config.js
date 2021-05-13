@@ -11,6 +11,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  resolve: {
+    alias: {
+      images: path.resolve(__dirname, 'src/'),
+    },
+  },
   plugins: [
     new HTMLWebpackPlugin({
       title: 'title',

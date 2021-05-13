@@ -1,18 +1,26 @@
+import img_0 from './images/1.jpg' 
+import img_1 from './images/2.jpg'
+import img_2 from './images/3.jpg'
+import img_3 from './images/4.jpg'
+import img_4 from './images/5.jpg'
+import img_5 from './images/6.jpg'
+
 export default class Cards {
   constructor(wrap, data) {
     this.data = data;
     this.wrap = wrap;
+    this.images = [img_0, img_1, img_2, img_3, img_4, img_5];
   }
 
   makeCards() {
     const arrCards = this.data.stock.map((elem, i) => {
-      const imgSrc = `../src/images/${elem.image}`
+      const imgSrc = this.images[i]
       return `
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <a href=${elem.href} class="col-md-4">
             <img src="${imgSrc}" alt="${elem.title}">
-          </a href="">
+          </a>
           <div class="col-md-8">
             <div class="card-body">
               <div class="card-header">
